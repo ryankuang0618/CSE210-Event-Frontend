@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { mockEvents } from "../api/MockEventData"; 
 import styles from "./AllEventPage.module.css"; 
-import { EventDataInterface } from "../types/EventData";
+import { EventDataInterface } from "../types/Eventdata";
 
 const AllEventPage: React.FC = () => {
     const [events, setEvents] = useState<EventDataInterface[]>([]);
