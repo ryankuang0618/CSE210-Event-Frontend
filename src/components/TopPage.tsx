@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import UcsdLogo from '../assets/ucsd-logo.png';
 import Login from "./Login";
 
+import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 
 function TopPage() {
@@ -16,7 +17,7 @@ function TopPage() {
           <span className="fs-4 fw-bold text-primary">Event Finder</span>
         </div>
         <div className="d-flex align-items-center gap-3">
-          <a href="/events" className="text-primary text-decoration-none">View all Events</a>
+          <Link to="/all-events" className="text-primary text-decoration-none">View all Events</Link>
           {/*<Login></Login>*/}
           {!isProfilePage && <Login />}
         </div>

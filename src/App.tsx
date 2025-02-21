@@ -3,6 +3,9 @@ import TopPage from "./components/TopPage"
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProfilePage from "./components/ProfilePage";
+
+import AllEventPage from "./components/AllEventPage";
+
 import { UserProvider } from "./UserInfo";
 
 function App() {
@@ -14,6 +17,7 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/profile" element={<ProfilePage />} />
+              <Route path="/all-events" element={<AllEventPage />} />
             </Routes>
           </div>
       </BrowserRouter>

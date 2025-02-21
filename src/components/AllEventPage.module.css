@@ -1,0 +1,44 @@
+.eventList {
+    border-radius: 0.5rem;
+    overflow-y: auto;  
+    max-height: 50vh;  
+    min-height: 40vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+.eventHeader, .eventItem {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;  
+}
+
+.eventHeader {
+    font-weight: bold;
+    background: #f1f1f1;
+    border-bottom: 0.5vh solid #ddd;
+}
+
+.eventItem:hover {
+    background: #f8f9fa;
+}
+
+.eventName {
+    width: 50%;  
+    text-align: left;
+}
+
+.eventDate {
+    width: 25%;  
+    text-align: center;
+}
+
+.eventAttendees {
+    width: 25%;
+    text-align: right;
+}
+
+.attendanceBadge {
+    font-size: 1rem;
+    padding: 0.2vw 0.4vw;
+}
