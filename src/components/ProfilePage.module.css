@@ -1,10 +1,8 @@
 .profileWrapper {
     text-align: center;
     width: 100%;
-
     max-width: 92vw;
-    margin: auto;
-
+    margin: 3vw auto;
     padding: 1vw;
 }
 
@@ -61,17 +59,26 @@
 .friendsSection, .pendingRequestsSection {
     display: flex;
     flex-direction: column;
-    align-items: start; 
-
-    max-width: 70%;
+    max-height: 250px;
+    border: 1px solid #ddd;
+    padding: 10px;
 }
 
-.friendsSection h4, .pendingRequestsSection h4 {
+.friendsSection, .pendingRequestsSection {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: start; 
-    max-width: 100%;
+    max-height: 250px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    min-width: 45%;
+}
 
+.friendsList, .pendingRequestsList {
+    overflow-y: auto;
+    max-height: 180px;
+    padding-right: 5px;
 }
 
 .friendItem, .pendingRequestItem {
@@ -134,4 +141,44 @@
 
     margin-left: auto;
     flex-shrink: 0;
+}
+
+.searchResults {
+    position: absolute;
+    width: 100%;
+    min-width: inherit; 
+    max-width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: left;
+}
+
+.sendRequestContainer {
+    position: relative;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+.searchResults ul {
+    margin: 0;
+    padding: 0;
+}
+
+.searchResults li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.searchResults li:hover {
+    background: #f7f7f7;
 }

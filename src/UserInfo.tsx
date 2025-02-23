@@ -1,12 +1,12 @@
 import { createContext, useReducer, useContext, useEffect, ReactNode } from "react";
-import {User} from "./types/User"
+import { UserData } from "./types/User"
 
 interface UserState {
-  user: User | null;
+  user: UserData | null;
 }
 
 type UserAction =
-  | { type: "LOGIN"; payload: User | null }
+  | { type: "LOGIN"; payload: UserData | null }
   | { type: "LOGOUT" };
 
 const UserInfo = createContext<{ state: UserState; dispatch: React.Dispatch<UserAction> } | undefined>(undefined);
