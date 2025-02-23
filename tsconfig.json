@@ -1,26 +1,7 @@
 {
-  "compilerOptions": {
-    "composite": true,  // Ensures the project is treated as part of a multi-project setup
-    "declaration": true,  // Generates .d.ts files alongside .ts files
-    "moduleResolution": "node16",  // Resolves modules the way Node.js (v16+) does
-    "allowImportingTsExtensions": true,  // Allows importing files with .ts extensions
-    "noEmit": true,  // Prevents emitting JavaScript files (use "emitDeclarationOnly" if you only want declarations)
-    "jsx": "react",  // Specifies JSX behavior (adjust if you're using a different framework)
-    "target": "es6",  // Ensures ES6 output (adjust as necessary)
-    "module": "esnext",  // Enables ESNext module system for modern JS features
-    "esModuleInterop": true,  // Allows default imports from non-ES modules
-    "skipLibCheck": true,  // Skips type checking of declaration files for faster build times
-    "strict": true  // Enables strict type-checking options
-  },
-  "include": [
-    "src/**/*"  // Adjust to match the location of your source files
-  ],
+  "files": [],
   "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.node.json"
-    }
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
   ]
 }
